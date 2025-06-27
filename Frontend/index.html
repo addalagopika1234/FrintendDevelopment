@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sri Vasavi Engineering College</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .navbar-brand { font-family: 'Times New Roman', serif; font-size: 2rem; }
+
+    #carouselExample {
+      height: 50vh;
+      overflow: hidden;
+    }
+    #carouselExample .carousel-inner,
+    #carouselExample .carousel-item {
+      height: 100%;
+      background-color: #000;
+    }
+    #carouselExample .carousel-item img {
+      width: 100vw;
+      height: 50vh;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }  
+    .card-img-top {
+            height: 200px;
+            object-fit: contain;
+        }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar with Home, Dropdown and Search -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sri Vasavi Engineering College</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Account
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+ <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="p4.jpg" class="d-block w-100" alt="Slide 1" />
+    </div>
+    <div class="carousel-item active">
+      <img src="college.jpg" class="d-block w-100" alt="Slide 2" />
+    </div>
+    <div class="carousel-item">
+      <img src="p1.jpg" class="d-block w-100" alt="Slide 3" />
+    </div>
+    <div class="carousel-item">
+      <img src="p2.jpg" class="d-block w-100" alt="Slide 4" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+  <!-- Cards Section -->
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="principal.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Dr.G.V.V.Ratnakara Rao</h5>
+            <p class="card-text">Dr.G.V.V.Ratnakara Rao is leading as principal of Sri Vasavi Engineering College</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100">
+          <img src="secratary.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">V.V.Subba Rao</h5>
+            <p class="card-text">V.V.Sbbarao is leading a secratary and correspondant of Sri Vasavi Engineering College</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="apparoa.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Dr.Ch.Apparoa</h5>
+            <p class="card-text">Dr.Ch.Apparoa is leading a Technical Directory of Sri Vasavi Engineering College</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="gopalsir.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Dr.G.Gopala Krishna</h5>
+            <p class="card-text">Dr.G.Gopala Krishna is leading a placement officer of Sri Vasavi Engineering College</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="hod.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Dr.D.Jaya Kumari</h5>
+            <p class="card-text">Dr.D.Jaya Kumari is leading of head of CSE Department in Sri Vasavi Engineering College</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

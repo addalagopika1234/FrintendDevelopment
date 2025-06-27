@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Username Generator</title>
+</head>
+<body>
+
+<label for="fullName">Enter your full name:</label>
+<input type="text" id="fullName" name="fullName"><br><br>
+
+<button onclick="generateUsername()">Generate Username</button><br><br>
+
+<label for="username">Your Username:</label>
+<input type="text" id="username" name="username" readonly>
+
+<script>
+function generateUsername() {
+  var fullName = document.getElementById("fullName").value;
+  var username = "@" + fullName + fullName.length;
+  document.getElementById("username").value = username;
+}
+</script>
+
+</body>
+</html>
